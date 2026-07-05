@@ -1,0 +1,40 @@
+{
+  "n_samples": 500,
+  "n_features": 54,
+  "n_classes": 10,
+  "classes": [
+    "AI Engineer",
+    "Business Analyst",
+    "Cloud Engineer",
+    "Cybersecurity Analyst",
+    "Data Analyst",
+    "Data Scientist",
+    "DevOps Engineer",
+    "Full Stack Developer",
+    "Machine Learning Engineer",
+    "Software Developer"
+  ],
+  "label_distribution": {
+    "Business Analyst": 71,
+    "DevOps Engineer": 67,
+    "Software Developer": 60,
+    "Cybersecurity Analyst": 56,
+    "Cloud Engineer": 54,
+    "Data Analyst": 48,
+    "Machine Learning Engineer": 39,
+    "Data Scientist": 39,
+    "AI Engineer": 33,
+    "Full Stack Developer": 33
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "xgboost_available": true,
+  "train_seconds": 49.5,
+  "models_trained": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Gradient Boosting",
+    "XGBoost"
+  ]
+}

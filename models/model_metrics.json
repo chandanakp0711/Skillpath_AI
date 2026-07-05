@@ -1,0 +1,1099 @@
+{
+  "best_model": "Random Forest",
+  "selection_metric": "cv_f1_mean",
+  "classes": [
+    "AI Engineer",
+    "Business Analyst",
+    "Cloud Engineer",
+    "Cybersecurity Analyst",
+    "Data Analyst",
+    "Data Scientist",
+    "DevOps Engineer",
+    "Full Stack Developer",
+    "Machine Learning Engineer",
+    "Software Developer"
+  ],
+  "feature_importance": {
+    "interest__Business Analyst": 0.13143353125694734,
+    "interest__Software Developer": 0.09245897701444068,
+    "interest__Cloud Architect": 0.08807166340541063,
+    "interest__Cybersecurity Expert": 0.07656801814749237,
+    "lang__JavaScript": 0.0724352495108693,
+    "tech__Cloud Computing": 0.06091388206808386,
+    "interest__Data Scientist": 0.05218329416866903,
+    "has_projects_bin": 0.049872008407285166,
+    "interest__AI Engineer": 0.04918467071545745,
+    "readiness_score": 0.03950589983861856,
+    "lang__Go": 0.024586347523322206,
+    "tech__Data Analysis": 0.021134066382505895,
+    "tech__Cybersecurity": 0.018927262999976255,
+    "tech__SQL": 0.018248741954049727,
+    "course__B.Tech IT": 0.017559131477636863,
+    "course__B.Tech CSE": 0.015627483979773035,
+    "technical_rating": 0.011663071611059094,
+    "soft_rating": 0.010623902256122952,
+    "n_technical_skills": 0.009389296161848727,
+    "year_ordinal": 0.008336296225062005,
+    "n_languages": 0.008086391633853001,
+    "lang__Python": 0.006506043660997475,
+    "tech__Machine Learning": 0.006413650361082027,
+    "course__MBA": 0.005154502664826404,
+    "support__Mentorship programs": 0.005098695104085843,
+    "lang__Java": 0.005097433933530087,
+    "soft__Teamwork": 0.0046047983627254445,
+    "method__Bootcamp": 0.004391556915979905,
+    "method__Self-study": 0.004321347418238963,
+    "support__Resume workshops": 0.004253750705826106,
+    "tech__Blockchain": 0.004018874835328987,
+    "lang__C++": 0.003997832937266083,
+    "challenge__Interview anxiety": 0.0038824208505739196,
+    "tech__Python": 0.0037738198662514546,
+    "challenge__Lack of experience": 0.003718233418385107,
+    "lang__R": 0.0036845508615589045,
+    "challenge__Limited guidance": 0.0036526835269144273,
+    "tech__Java": 0.0034762237173714986,
+    "support__Internship opportunities": 0.00343337252398828,
+    "soft__Leadership": 0.0034195444040093777,
+    "n_soft_skills": 0.0034160511615119902,
+    "soft__Problem-Solving": 0.0033315190896895147,
+    "challenge__Difficulty in resume building": 0.003312839061153329,
+    "soft__Adaptability": 0.003197679111117681,
+    "course__B.Sc Data Science": 0.003126458387014046,
+    "lang__C#": 0.003025140857479103,
+    "soft__Communication": 0.0030040715407934093,
+    "challenge__No networking opportunities": 0.002969402421284226,
+    "method__College curriculum": 0.002964489924907826,
+    "soft__Time Management": 0.0029331451521469893,
+    "support__Technical skill training": 0.0026094641503340106,
+    "course__BBA": 0.0022353921382498726,
+    "method__Online": 0.0022016777810475257,
+    "course__M.Tech AI": 0.001964146415845966
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.74,
+      "precision": 0.744891615737204,
+      "recall": 0.74,
+      "f1": 0.734782924136312,
+      "cv_f1_mean": 0.7497633961852727,
+      "cv_f1_std": 0.01903248288252224,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          2,
+          0,
+          0,
+          2,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          8,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          6,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          3,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "per_class": {
+        "AI Engineer": {
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.7142857142857143,
+          "support": 7.0
+        },
+        "Business Analyst": {
+          "precision": 0.7647058823529411,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.8387096774193549,
+          "support": 14.0
+        },
+        "Cloud Engineer": {
+          "precision": 0.7142857142857143,
+          "recall": 0.45454545454545453,
+          "f1-score": 0.5555555555555556,
+          "support": 11.0
+        },
+        "Cybersecurity Analyst": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7272727272727273,
+          "f1-score": 0.6956521739130435,
+          "support": 11.0
+        },
+        "Data Analyst": {
+          "precision": 0.5454545454545454,
+          "recall": 0.6,
+          "f1-score": 0.5714285714285714,
+          "support": 10.0
+        },
+        "Data Scientist": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1-score": 0.5,
+          "support": 8.0
+        },
+        "DevOps Engineer": {
+          "precision": 0.8125,
+          "recall": 1.0,
+          "f1-score": 0.896551724137931,
+          "support": 13.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "f1-score": 0.7142857142857143,
+          "support": 8.0
+        },
+        "Software Developer": {
+          "precision": 0.9090909090909091,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8695652173913043,
+          "support": 12.0
+        },
+        "accuracy": 0.74,
+        "macro avg": {
+          "precision": 0.7460322765469825,
+          "recall": 0.7216341991341991,
+          "f1-score": 0.7265125257508098,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.744891615737204,
+          "recall": 0.74,
+          "f1-score": 0.734782924136312,
+          "support": 100.0
+        }
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.94,
+      "precision": 0.9497222222222222,
+      "recall": 0.94,
+      "f1": 0.940549728049728,
+      "cv_f1_mean": 0.8967925583860248,
+      "cv_f1_std": 0.03331715616539435,
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "per_class": {
+        "AI Engineer": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.9230769230769231,
+          "support": 7.0
+        },
+        "Business Analyst": {
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1-score": 0.875,
+          "support": 14.0
+        },
+        "Cloud Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "Cybersecurity Analyst": {
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1-score": 0.9565217391304348,
+          "support": 11.0
+        },
+        "Data Analyst": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 10.0
+        },
+        "Data Scientist": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "DevOps Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "Software Developer": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9565217391304348,
+          "support": 12.0
+        },
+        "accuracy": 0.94,
+        "macro avg": {
+          "precision": 0.9569444444444445,
+          "recall": 0.9282142857142857,
+          "f1-score": 0.9384100199317592,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.9497222222222222,
+          "recall": 0.94,
+          "f1-score": 0.940549728049728,
+          "support": 100.0
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.94,
+      "precision": 0.9497222222222222,
+      "recall": 0.94,
+      "f1": 0.940549728049728,
+      "cv_f1_mean": 0.9089336836178621,
+      "cv_f1_std": 0.0229941378506289,
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "per_class": {
+        "AI Engineer": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.9230769230769231,
+          "support": 7.0
+        },
+        "Business Analyst": {
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1-score": 0.875,
+          "support": 14.0
+        },
+        "Cloud Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "Cybersecurity Analyst": {
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1-score": 0.9565217391304348,
+          "support": 11.0
+        },
+        "Data Analyst": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 10.0
+        },
+        "Data Scientist": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "DevOps Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "Software Developer": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9565217391304348,
+          "support": 12.0
+        },
+        "accuracy": 0.94,
+        "macro avg": {
+          "precision": 0.9569444444444445,
+          "recall": 0.9282142857142857,
+          "f1-score": 0.9384100199317592,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.9497222222222222,
+          "recall": 0.94,
+          "f1-score": 0.940549728049728,
+          "support": 100.0
+        }
+      }
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.92,
+      "precision": 0.9280555555555555,
+      "recall": 0.92,
+      "f1": 0.9193226749096314,
+      "cv_f1_mean": 0.891139038637351,
+      "cv_f1_std": 0.0241961687297703,
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "per_class": {
+        "AI Engineer": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.9230769230769231,
+          "support": 7.0
+        },
+        "Business Analyst": {
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1-score": 0.875,
+          "support": 14.0
+        },
+        "Cloud Engineer": {
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1-score": 0.9565217391304348,
+          "support": 11.0
+        },
+        "Cybersecurity Analyst": {
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1-score": 0.9565217391304348,
+          "support": 11.0
+        },
+        "Data Analyst": {
+          "precision": 0.875,
+          "recall": 0.7,
+          "f1-score": 0.7777777777777778,
+          "support": 10.0
+        },
+        "Data Scientist": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "DevOps Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1-score": 0.9333333333333333,
+          "support": 8.0
+        },
+        "Software Developer": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9565217391304348,
+          "support": 12.0
+        },
+        "accuracy": 0.92,
+        "macro avg": {
+          "precision": 0.9361111111111111,
+          "recall": 0.9057142857142857,
+          "f1-score": 0.9162844160670248,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.9280555555555555,
+          "recall": 0.92,
+          "f1-score": 0.9193226749096314,
+          "support": 100.0
+        }
+      }
+    },
+    "XGBoost": {
+      "accuracy": 0.9,
+      "precision": 0.9077594627594627,
+      "recall": 0.9,
+      "f1": 0.8994799814982882,
+      "cv_f1_mean": 0.8812970615823842,
+      "cv_f1_std": 0.03518874169213265,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "per_class": {
+        "AI Engineer": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.7692307692307693,
+          "support": 7.0
+        },
+        "Business Analyst": {
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1-score": 0.875,
+          "support": 14.0
+        },
+        "Cloud Engineer": {
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1-score": 0.9523809523809523,
+          "support": 11.0
+        },
+        "Cybersecurity Analyst": {
+          "precision": 0.8461538461538461,
+          "recall": 1.0,
+          "f1-score": 0.9166666666666666,
+          "support": 11.0
+        },
+        "Data Analyst": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8,
+          "f1-score": 0.8421052631578947,
+          "support": 10.0
+        },
+        "Data Scientist": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1-score": 0.8,
+          "support": 8.0
+        },
+        "DevOps Engineer": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "Full Stack Developer": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 6.0
+        },
+        "Machine Learning Engineer": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "Software Developer": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9565217391304348,
+          "support": 12.0
+        },
+        "accuracy": 0.9,
+        "macro avg": {
+          "precision": 0.9078296703296704,
+          "recall": 0.8798376623376625,
+          "f1-score": 0.8895996299657627,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.9077594627594627,
+          "recall": 0.9,
+          "f1-score": 0.8994799814982882,
+          "support": 100.0
+        }
+      }
+    }
+  }
+}
